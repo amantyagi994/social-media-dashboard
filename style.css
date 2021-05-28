@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 :root {
-  --limeGreen: hsl(163, 72%, 41%);
-  --brightRed: hsl(356, 69%, 56%);
+  --gain: hsl(163, 72%, 41%);
+  --loss: hsl(356, 69%, 56%);
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(to right, #fdc468, #df4996);
   --YouTube: hsl(348, 97%, 39%);
 }
 
@@ -15,18 +15,183 @@
   --card-bg: hsl(228, 28%, 20%);
   --text-1: hsl(228, 34%, 66%);
   --text-2: hsl(0, 0%, 100%);
-  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --Toggle: linear-gradient(90deg, #378fe6, #3eda82);
 }
 
-:root.light {
+:root {
   --bg: hsl(0, 0%, 100%);
   --bg-top-pattern: hsl(225, 100%, 98%);
   --card-bg: hsl(227, 47%, 96%);
   --text-1: hsl(228, 12%, 44%);
   --text-2: hsl(230, 17%, 14%);
-  --Toggle: hsl(230, 22%, 74%);
+  --Toggle: linear-gradient(to right, #aeb3cb, #aeb3cb);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 body {
   font-family: "Inter", sans-serif;
+  color: var(--text-2);
+  background: var(--bg);
+}
+
+.isflex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.theme-transition-default {
+  transition: 0.4s ease;
+}
+
+.theme-transition-medium {
+  transition: 0.2s ease;
+}
+
+.theme-transition-fast {
+  transition: 0.1s ease;
+}
+
+main.app {
+  background: var(--bg);
+}
+
+.top {
+  background: var(--bg-top-pattern);
+  padding: 2.5rem 1.5rem 6rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.heading-wrapper {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--text-1);
+}
+
+.top .heading-wrapper h1 {
+  font-size: 1.5rem;
+}
+
+.top .heading-wrapper .total-followers {
+  font-size: 0.8em;
+  margin-top: 0.2rem;
+  color: var(--text-1);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.theme-toggle-wrapper {
+  padding: 1.5rem 0;
+  justify-content: space-between;
+}
+
+.theme-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  width: 3rem;
+  height: 1.75rem;
+  border-radius: 5rem;
+}
+
+.toggle-btn {
+  position: relative;
+  background: var(--Toggle);
+  cursor: pointer;
+}
+
+.toggle-handle {
+  position: absolute;
+  top: 50%;
+  background: var(--card-bg);
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: translate(0%, -50%);
+  border-radius: 50%;
+  left: 0.25rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.toggle-btn.active .toggle-handle {
+  left: 1.5rem;
+}
+
+.featured {
+  padding: 0 1.5rem;
+  position: relative;
+  top: -2.5rem;
+}
+
+.featured-social-card {
+  background: var(--card-bg);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1.75rem;
+  border-radius: 6px;
+  overflow: hidden;
+  color: var(--text-1);
+  font-weight: bold;
+}
+
+.featured-social-card > div {
+  margin: 0.5rem 0;
+}
+
+.featured-top-decorator-bar {
+  width: 100%;
+  height: 4px;
+  margin: 0 0 1.75rem !important;
+}
+
+.featured-social-profile-wrapper {
+  display: flex;
+}
+.featured-social-profile-wrapper img {
+  margin-right: 0.5rem;
+}
+
+.featured-stat-count {
+  font-size: 3.5rem;
+}
+
+.featured-stat-type-name {
+  font-variant-caps: all-petite-caps;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.featured-recent-change-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.featured-stat-count {
+  color: var(--text-2);
+}
+
+.featured-recent-change-icon {
+  margin-right: 0.5rem;
+}
+
+.bottom {
+  padding: 0 1.5rem;
+  color: var(--text-2);
 }

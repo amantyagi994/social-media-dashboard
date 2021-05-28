@@ -15,293 +15,347 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <section class="top">
-      <div class="heading-wrapper">
-        <h1>Social Media Dashboard</h1>
-        <div class="total-followers">Total Followers: <span>23,004</span></div>
-      </div>
+  <body class="theme-transition-fast">
+    <main class="app theme-transition-default">
+      <section class="top theme-transition-default">
+        <div class="heading-wrapper">
+          <h1>Social Media Dashboard</h1>
+          <div class="total-followers">
+            Total Followers: <span>23,004</span>
+          </div>
+        </div>
 
-      <div class="theme-toggle-wrapper">
-        <div class="theme-text">Dark Mode</div>
-        <input
-          type="checkbox"
-          name="theme-toggle"
-          id="theme-toggle"
-          class="theme-toggle"
-        />
-      </div>
-    </section>
+        <div class="theme-toggle-wrapper isflex">
+          <div class="theme-text">Light Mode</div>
 
-    <section class="absolute-section">
-      <div class="featured-social-card">
-        <div class="featured-top-decorator-bar"></div>
-        <div class="featured-social-profile-wrapper">
-          <img
-            src="images/icon-facebook.svg"
-            alt=""
-            class="featured-social-platform-icon"
-          />
-          <div class="social-profile-username">@nathanf</div>
-        </div>
-        <div class="featured-stat-count" id="facebook">1987</div>
-        <div class="featured-stat-type-name">Followers</div>
-        <div class="featured-recent-change-wrapper">
-          <img
-            src="images/icon-up.svg"
-            alt=""
-            class="featured-recent-change-icon"
-          />
-          <div class="featured-recent-change-text gain">
-            <span class="featured-recent-change-count">12</span>
-            <span class="featured-recent-change-day">Today</span>
+          <div class="toggle-btn theme-transition-default">
+            <div class="toggle-handle theme-transition-default"></div>
           </div>
         </div>
-      </div>
-      <div class="featured-social-card">
-        <div class="featured-top-decorator-bar"></div>
-        <div class="featured-social-profile-wrapper">
-          <img
-            src="images/icon-twitter.svg"
-            alt=""
-            class="featured-social-platform-icon"
-          />
-          <div class="social-profile-username">@nathanf</div>
-        </div>
-        <div class="featured-stat-count" id="facebook">1044</div>
-        <div class="featured-stat-type-name">Followers</div>
-        <div class="featured-recent-change-wrapper">
-          <img
-            src="images/icon-up.svg"
-            alt=""
-            class="featured-recent-change-icon"
-          />
-          <div class="featured-recent-change-text gain">
-            <span class="featured-recent-change-count">99</span>
-            <span class="featured-recent-change-day">Today</span>
-          </div>
-        </div>
-      </div>
-      <div class="featured-social-card">
-        <div class="featured-top-decorator-bar"></div>
-        <div class="featured-social-profile-wrapper">
-          <img
-            src="images/icon-instagram.svg"
-            alt=""
-            class="featured-social-platform-icon"
-          />
-          <div class="social-profile-username">@realnathanf</div>
-        </div>
-        <div class="featured-stat-count" id="facebook">11k</div>
-        <div class="featured-stat-type-name">Followers</div>
-        <div class="featured-recent-change-wrapper">
-          <img
-            src="images/icon-up.svg"
-            alt=""
-            class="featured-recent-change-icon"
-          />
-          <div class="featured-recent-change-text gain">
-            <span class="featured-recent-change-count">1099</span>
-            <span class="featured-recent-change-day">Today</span>
-          </div>
-        </div>
-      </div>
-      <div class="featured-social-card">
-        <div class="featured-top-decorator-bar"></div>
-        <div class="featured-social-profile-wrapper">
-          <img
-            src="images/icon-youtube.svg"
-            alt=""
-            class="featured-social-platform-icon"
-          />
-          <div class="social-profile-username">Nathan F.</div>
-        </div>
-        <div class="featured-stat-count" id="facebook">8239</div>
-        <div class="featured-stat-type-name">Followers</div>
-        <div class="featured-recent-change-wrapper">
-          <img
-            src="images/icon-down.svg"
-            alt=""
-            class="featured-recent-change-icon"
-          />
-          <div class="featured-recent-change-text loss">
-            <span class="featured-recent-change-count">144</span>
-            <span class="featured-recent-change-day">Today</span>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="bottom">
-      <h2>Overview - Today</h2>
-
-      <div class="overview-card-wrapper">
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Page Views</p>
-            <p class="overview-stat-count">87</p>
-          </div>
-          <div class="overview-other-info">
+      <section class="absolute-section featured theme-transition-default">
+        <div
+          class="featured-social-card theme-transition-default"
+          data-socialmediatype="Facebook"
+          data-styletype="bg"
+        >
+          <div class="featured-top-decorator-bar"></div>
+          <div class="featured-social-profile-wrapper">
             <img
               src="images/icon-facebook.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-social-platform-icon"
             />
-            <div class="overview-recent-updates gain">
-              <img src="" alt="" class="overview-recent-update-icon" />
-              <span class="overview-recent-update-count">3%</span>
-            </div>
+            <div class="social-profile-username">@nathanf</div>
           </div>
-        </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Likes</p>
-            <p class="overview-stat-count">52</p>
+          <div
+            class="featured-stat-count theme-transition-default"
+            id="facebook"
+          >
+            1987
           </div>
-          <div class="overview-other-info">
+          <div class="featured-stat-type-name">Followers</div>
+          <div
+            class="featured-recent-change-wrapper"
+            data-styletype="text"
+            data-stattype="gain"
+          >
             <img
-              src="images/icon-facebook.svg"
+              src="images/icon-up.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-recent-change-icon"
             />
-            <div class="overview-recent-updates loss">
-              <img
-                src="images/icon-down.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">2%</span>
+            <div class="featured-recent-change-text gain">
+              <span class="featured-recent-change-count">12</span>
+              <span class="featured-recent-change-day">Today</span>
             </div>
           </div>
         </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Likes</p>
-            <p class="overview-stat-count">5462</p>
-          </div>
-          <div class="overview-other-info">
-            <img
-              src="images/icon-instagram.svg"
-              alt=""
-              class="overview-social-icon"
-            />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-up.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">2257%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Profile Views</p>
-            <p class="overview-stat-count">52k</p>
-          </div>
-          <div class="overview-other-info">
-            <img
-              src="images/icon-instagram.svg"
-              alt=""
-              class="overview-social-icon"
-            />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-up.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">1375%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Retweets</p>
-            <p class="overview-stat-count">117</p>
-          </div>
-          <div class="overview-other-info">
+        <div
+          class="featured-social-card theme-transition-default"
+          data-socialmediatype="Twitter"
+          data-styletype="bg"
+        >
+          <div class="featured-top-decorator-bar"></div>
+          <div class="featured-social-profile-wrapper">
             <img
               src="images/icon-twitter.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-social-platform-icon"
             />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-up.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">303%</span>
-            </div>
+            <div class="social-profile-username">@nathanf</div>
           </div>
-        </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Likes</p>
-            <p class="overview-stat-count">507</p>
+          <div
+            class="featured-stat-count theme-transition-default"
+            id="facebook"
+          >
+            1044
           </div>
-          <div class="overview-other-info">
+          <div class="featured-stat-type-name">Followers</div>
+          <div
+            class="featured-recent-change-wrapper"
+            data-styletype="text"
+            data-stattype="gain"
+          >
             <img
-              src="images/icon-twitter.svg"
+              src="images/icon-up.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-recent-change-icon"
             />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-up.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">553%</span>
+            <div class="featured-recent-change-text gain">
+              <span class="featured-recent-change-count">99</span>
+              <span class="featured-recent-change-day">Today</span>
             </div>
           </div>
         </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Likes</p>
-            <p class="overview-stat-count">107</p>
+        <div
+          class="featured-social-card theme-transition-default"
+          data-socialmediatype="Instagram"
+          data-styletype="bg"
+        >
+          <div class="featured-top-decorator-bar"></div>
+          <div class="featured-social-profile-wrapper">
+            <img
+              src="images/icon-instagram.svg"
+              alt=""
+              class="featured-social-platform-icon"
+            />
+            <div class="social-profile-username">@realnathanf</div>
           </div>
-          <div class="overview-other-info">
+          <div
+            class="featured-stat-count theme-transition-default"
+            id="facebook"
+          >
+            11k
+          </div>
+          <div class="featured-stat-type-name">Followers</div>
+          <div
+            class="featured-recent-change-wrapper"
+            data-styletype="text"
+            data-stattype="gain"
+          >
+            <img
+              src="images/icon-up.svg"
+              alt=""
+              class="featured-recent-change-icon"
+            />
+            <div class="featured-recent-change-text gain">
+              <span class="featured-recent-change-count">1099</span>
+              <span class="featured-recent-change-day">Today</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="featured-social-card theme-transition-default"
+          data-socialmediatype="YouTube"
+          data-styletype="bg"
+        >
+          <div class="featured-top-decorator-bar"></div>
+          <div class="featured-social-profile-wrapper">
             <img
               src="images/icon-youtube.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-social-platform-icon"
             />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-down.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">19%</span>
-            </div>
+            <div class="social-profile-username">Nathan F.</div>
           </div>
-        </div>
-        <div class="overview-card">
-          <div class="overview-stat-wrapper">
-            <p class="overview-stat-name">Total Views</p>
-            <p class="overview-stat-count">1407</p>
+          <div
+            class="featured-stat-count theme-transition-default"
+            id="facebook"
+          >
+            8239
           </div>
-          <div class="overview-other-info">
+          <div class="featured-stat-type-name">Followers</div>
+          <div
+            class="featured-recent-change-wrapper"
+            data-styletype="text"
+            data-stattype="loss"
+          >
             <img
-              src="images/icon-youtube.svg"
+              src="images/icon-down.svg"
               alt=""
-              class="overview-social-icon"
+              class="featured-recent-change-icon"
             />
-            <div class="overview-recent-updates">
-              <img
-                src="images/icon-down.svg"
-                alt=""
-                class="overview-recent-update-icon"
-              />
-              <span class="overview-recent-update-count">12%</span>
+            <div class="featured-recent-change-text loss">
+              <span class="featured-recent-change-count">144</span>
+              <span class="featured-recent-change-day">Today</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="bottom">
+        <h2>Overview - Today</h2>
+
+        <div class="overview-card-wrapper">
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Page Views</p>
+              <p class="overview-stat-count">87</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-facebook.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates gain">
+                <img src="" alt="" class="overview-recent-update-icon" />
+                <span class="overview-recent-update-count">3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Likes</p>
+              <p class="overview-stat-count">52</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-facebook.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates loss">
+                <img
+                  src="images/icon-down.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Likes</p>
+              <p class="overview-stat-count">5462</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-instagram.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-up.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Profile Views</p>
+              <p class="overview-stat-count">52k</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-instagram.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-up.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">1375%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Retweets</p>
+              <p class="overview-stat-count">117</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-twitter.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-up.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">303%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Likes</p>
+              <p class="overview-stat-count">507</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-twitter.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-up.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">553%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Likes</p>
+              <p class="overview-stat-count">107</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-youtube.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-down.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">19%</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-stat-wrapper">
+              <p class="overview-stat-name">Total Views</p>
+              <p class="overview-stat-count">1407</p>
+            </div>
+            <div class="overview-other-info">
+              <img
+                src="images/icon-youtube.svg"
+                alt=""
+                class="overview-social-icon"
+              />
+              <div class="overview-recent-updates">
+                <img
+                  src="images/icon-down.svg"
+                  alt=""
+                  class="overview-recent-update-icon"
+                />
+                <span class="overview-recent-update-count">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <div class="attribution">
       Challenge by
@@ -309,5 +363,44 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const themeText = document.querySelector(".theme-text");
+
+      function toggleTheme() {
+        toggleBtn.classList.toggle("active");
+        document.documentElement.classList.toggle("dark");
+        document.documentElement.classList.contains("dark")
+          ? (themeText.innerText = "Dark Mode")
+          : (themeText.innerText = "Light Mode");
+      }
+
+      toggleBtn.addEventListener("click", toggleTheme);
+
+      const topDecorators = document.querySelectorAll(
+        ".featured-top-decorator-bar"
+      );
+      const recentChanges = document.querySelectorAll(
+        ".featured-recent-change-text"
+      );
+
+      function setStyles(elem) {
+        if (elem.parentElement.dataset.styletype == "bg") {
+          elem.style.setProperty(
+            "background",
+            `var(--${elem.parentElement.dataset.socialmediatype})`
+          );
+        } else if (elem.parentElement.dataset.styletype == "text") {
+          elem.style.setProperty(
+            "color",
+            `var(--${elem.parentElement.dataset.stattype})`
+          );
+        }
+      }
+
+      topDecorators.forEach(setStyles);
+      recentChanges.forEach(setStyles);
+    </script>
   </body>
 </html>
