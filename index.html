@@ -26,7 +26,7 @@
         </div>
 
         <div class="theme-toggle-wrapper isflex">
-          <div class="theme-text">Light Mode</div>
+          <div class="theme-text">Dark Mode</div>
 
           <div class="toggle-btn theme-transition-default">
             <div class="toggle-handle theme-transition-default"></div>
@@ -371,9 +371,9 @@
       function toggleTheme() {
         toggleBtn.classList.toggle("active");
         document.documentElement.classList.toggle("dark");
-        document.documentElement.classList.contains("dark")
-          ? (themeText.innerText = "Dark Mode")
-          : (themeText.innerText = "Light Mode");
+        // document.documentElement.classList.contains("dark")
+        //   ? (themeText.innerText = "Dark Mode")
+        //   : (themeText.innerText = "Light Mode");
       }
 
       toggleBtn.addEventListener("click", toggleTheme);
